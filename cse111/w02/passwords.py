@@ -49,7 +49,7 @@ def word_complexity(word):
     return complexity
 
 # Calculate the password strength
-def pasword_strength(password, min_length=10, strong_length=16):
+def password_strength(password, min_length=10, strong_length=16):
     missing_chars = []
 
     if word_in_file(password, 'wordlist.txt', case_sensitive=False):
@@ -100,7 +100,7 @@ def main():
             print('Exiting the password strength checker.')
             break
 
-        strength = pasword_strength(password)
+        strength = password_strength(password)
         print(f'Password strength: {strength}')
         visualize_strength(strength)
 
