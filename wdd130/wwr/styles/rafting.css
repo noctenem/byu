@@ -1,0 +1,42 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: var(--accent3-color);
+  font-size: 4rem;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+  background-color: var(--accent3-color);
+  border-radius: var(--rounded);
+  padding: 10px 30px;
+}
+
+.hero article * {
+  color: var(--primary-color);
+  text-align: justify;
+}
+
+.hero article img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 0px 10px;
+}
