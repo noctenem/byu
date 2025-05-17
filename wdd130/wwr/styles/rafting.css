@@ -37,6 +37,6 @@
 .hero article img {
   height: 100px;
   width: 100px;
-  float: left;
+  float: right;
   margin: 0px 10px;
 }
