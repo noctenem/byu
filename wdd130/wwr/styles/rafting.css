@@ -1,8 +1,8 @@
 /* COMMON */
 :root {
-  --primary-color: #160c28;
-  --secondary-color: #f3e9d2;
-  --accent1-color: #1a936f;
+  --primary-color: #292B2C;
+  --secondary-color: #eaf1fb;
+  --accent1-color: #02aa34;
   --accent2-color: #88d498;
   --accent3-color: #c6dabf;
   --rounded: 10px;
@@ -24,6 +24,7 @@
 }
 
 body {
+  background-color: var(--secondary-color);
   font-family: var(--body-font);
 }
 
@@ -55,10 +56,10 @@ header {
   grid-template-columns: repeat(2, 300px);
   justify-content: space-around;
   align-items: center;
-  backdrop-filter: blur(6px);
+  background-color: var(--primary-color);
 }
 
-header nav ul {
+header nav {
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -66,14 +67,15 @@ header nav ul {
   align-items: center;
 }
 
-header nav ul li a {
+header nav a {
   padding: 0 10px;
   height: 100%;
-  color: var(--accent2-color);
+  color: var(--secondary-color);
+  line-height: 50px;
 }
 
-header nav ul li a:hover {
-  color: var(--accent1-color);
+header nav a:hover {
+text-decoration: underline;
 }
 
 .history div {
@@ -142,31 +144,38 @@ footer nav a * {
 
 .hero h1 {
   position: absolute;
-  top: 30%;
-  left: 10%;
-  color: var(--accent3-color);
-  font-size: 4rem;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--secondary-color);
+  font-size: 60px;
 }
 
 .hero article {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
   width: 550px;
-  background-color: var(--accent3-color);
+  padding: 10px;
+  background-color: var(--primary-color);
   border-radius: var(--rounded);
-  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
 
 .hero article * {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-align: justify;
+  font-size: 14px;
 }
 
 .hero article img {
   height: 100px;
   width: 100px;
-  float: right;
-  margin: 0px 10px;
+  border-radius: var(--rounded);
+  order: 2;
 }
